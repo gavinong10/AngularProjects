@@ -8,7 +8,7 @@
 				<link rel="stylesheet" href="/styles/importer.css">
 				<!--STYLES END-->
 		</head>
-		<body ng-app='SignupMod' ng-controller='SignupCtrl'>
+		<body ng-app='LoginMod' ng-controller='LoginCtrl'>
 		<div class="large-4 large-centered columns">
 	      <div class="signup-box">
 	        <div class="row">
@@ -17,12 +17,7 @@
 	              UserAuth
 	            </h2>
 	            <p>Please fill in the fields below to signup</p>
-	            <form ng-submit="runSignup()">
-	               <div class="row">
-	                 <div class="large-12 columns">
-	                     <input ng-model="name" ng-maxlength="40" type="text" name="name" placeholder="Name" required />
-	                 </div>
-	               </div>
+	            <form ng-submit="runLogin()">
 	                <div class="row">
 	                 <div class="large-12 columns">
 	                     <input ng-model="email" type="email" placeholder="Email Address" name="email" ng-model="email" required >
@@ -33,17 +28,12 @@
 	                     <input ng-model="password" ng-maxlength="20" type="password" name="password" placeholder="Password" required />
 	                 </div>
 	              </div>
-	               <div class="row">
-	                 <div class="large-12 columns">
-	                     <input ng-model="password2" ng-maxlength="20" type="password" name="password2" placeholder="Password Confirm" required />
-	                 </div>
-	              </div>
 	              <div class="row">
 	                <div class="large-7 columns">
-	                  <input type="submit" class="button expand" value="Create Account"/>
+	                  <input type="submit" class="button expand" value="Login"/>
 	                </div>
-	                <div class="large-5 columns">
-	                 <a class="button expand">Log In</a>
+	                <div class="large-5 columns">		
+	                 <a class="button expand">Create Account</a>
 	                </div>
 	              </div>
 	            </form>
